@@ -228,46 +228,41 @@ section {
 }
 
 .servicos {
-  position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  background-image: url('assets/img/fundoservicos.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-
-.imagem-fundo img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-  margin-right: 9000px;
-  margin-bottom: -3000px;
-}
-
-.conteudo-servicos { 
-  position: relative;   
-  z-index: 2; 
-  color: white;
+.servicos {
   text-align: center;
-  padding: 60px 20px;
-  width: 100%;
+  padding: 50px 20px;
+  background: url('fundo-textura.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.servicos h1 {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  font-size: 3rem;
 }
 
 .lista-servicos {
-  list-style: none;
-  padding: 0;
-  margin-top: 2rem;
-  font-size: 1.8rem;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto 40px;
 }
 
-.lista-servicos li {
+.item-servico {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(255,255,255,0.4);
-  padding: 15px 10px;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 20px;
 }
 
