@@ -3,12 +3,15 @@
 
 <head>
   <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Responsividade para dispositivos móveis -->
-  <link rel="stylesheet" href="assets\css\style.css"> <!-- Link para o arquivo CSS externo -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Responsividade para dispositivos móveis -->
+  <link rel="stylesheet" href="assets/css/style.css"> <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="assets/js/script.js">
   <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Otimiza a conexão com o Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  
+
+
     rel="stylesheet"> <!-- Fonte Roboto -->
   <title>Murilo barber</title> <!-- Título da aba do navegador -->
 </head>
@@ -16,7 +19,12 @@
 <body>
   <!-- Cabeçalho fixo com logo, menu e ícone -->
   <header class="header">
-    <section>
+    <section> 
+
+      <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+      </div>
+      
       <a href="#" class="logo">
         <img src="assets\img\logo-removebg-preview.png" alt="logo" width="70px"> <!-- Logo -->
       </a>
@@ -29,9 +37,7 @@
         <a href="#contato">Contato</a>
       </nav>
 
-      <div class="icons"> <!-- Ícone de busca -->
-        <img width="30" height="30" src="https://img.icons8.com/?size=100&id=47838&format=png&color=ffffff"
-          alt="search--v2" />
+    
       </div>
     </section>
   </header>
@@ -41,9 +47,7 @@
     <div class="logo-overlay">
       <img src="assets\img\murilologo.png" alt="Logo Murilo Barber"> <!-- Logo sobre o fundo -->
     </div>
-    <div class="content">
-      <img src="assets\img/imghome.jpg" width="2750px"> <!-- Imagem de fundo -->
-    </div>
+   
   </div>
 
   <!-- Seção sobre -->
@@ -53,68 +57,103 @@
       <div class="container-img"> <!-- Imagem sobre a barbearia -->
         <img src="assets\img\murilosobrenos.jpg" alt="sobre-nos">
       </div>
-      <div class="content2"> <!-- Texto explicando a proposta da barbearia -->
+      <div class="content2">
         <h1>O Que Faz Nosso Corte Especial</h1>
-        <pre>
-  A Murilo Barber nasceu em 2015, 
-  com a proposta de reiventar o mercado 
-  de barbearia e trazer para seus clientes todas 
-  as possibilidades para se ter um estilo 
-  marcante e impecável. Contamos com 
-  barbeiros incríveis, reunidos em um ambiente 
-  agradável e aconchegante, onde os elementos 
-  clássicos se unem à modernidade.Aqui, 
-  possuímos um atendimento personalizado, de 
-  amigo para amigo, que é o nosso grande 
-  diferencial. Bom papo, boa música e um bom
-  corte te esperam na Murilo Barber. Venha 
-  conhecer! 
-        </pre>
+        <p>
+          A Murilo Barber nasceu em 2015, com a proposta de reinventar o mercado de barbearia
+          e trazer aos seus clientes todas as possibilidades para se ter um estilo marcante
+          e impecável. Contamos com barbeiros incríveis, reunidos em um ambiente agradável
+          e aconchegante, onde os elementos clássicos se unem à modernidade.
+          Aqui, possuímos um atendimento personalizado, de amigo para amigo, que é o nosso
+          grande diferencial. Bom papo, boa música e um bom corte te esperam na Murilo Barber.
+          Venha conhecer!
+        </p>
       </div>
+      
     </div>
   </section>
 
   <section class="servicos" id="servicos">
-    <div class="imagem-fundo">
-      <img src="assets/img/fundoservicos.jpg" alt="img fundoserv">
-    </div>
+    <h2 class="servicos-title">Serviços</h2>
   
-    <div class="conteudo-servicos">
-      <h2 class="servicos-title">Serviços</h2>
-      <div class="lista-servicos">
-        <div class="item-servico">
-          <span>Corte</span>
-          <span>R$55</span>
-        </div>
-        <div class="item-servico">
-          <span>Barba</span>
-          <span>R$55</span>
-        </div>
-        <div class="item-servico">
-          <span>Corte + Barba</span>
-          <span>R$110</span>
-        </div>
-        <div class="item-servico">
-          <span>Alinhamento de Fios</span>
-          <span>R$120</span>
-        </div>
-        <div class="item-servico">
-          <span>Esfoliação Capilar</span>
-          <span>R$30</span>
-        </div>
-        <div class="item-servico">
-          <span>Hidratação</span>
-          <span>R$30</span>
-        </div>
-        <div class="item-servico">
-          <span>Sobrancelha</span>
-          <span>R$30</span>
-        </div>
+    <div class="lista-servicos">
+      <div class="item-servico">
+        <h3>Cabelo</h3>
+        <p>R$35,00</p>
+        <img src="assets/img/img_corte.jpg" alt="Corte de cabelo">
+      </div>
+  
+      <div class="item-servico">
+        <h3>Barba</h3>
+        <p>R$40,00</p>
+        <img src="assets/img/img_barba.jpg" alt="Corte de barba">
+      </div>
+  
+      <div class="item-servico">
+        <h3>Sobrancelha</h3>
+        <p>R$10,00</p>
+        <img src="assets/img/img_sombrancelha.jpeg" alt="Sobrancelha">
+      </div>
+      
+    <div class="item-servico">
+      <h3>Cabelo e Barba</h3>
+      <p>R$70,00</p>
+      <img src="assets/img/img_cabelo e barba.jpeg" alt="Cabelo e barba">
+    </div>
+
+    <div class="item-servico">
+      <h3>Cabelo e Sobrancelha</h3>
+      <p>R$55,00</p>
+      <img src="assets/img/img_corte.jpg" alt="Cabelo e sobrancelha">
+    </div>
+
+    </div>
+  </section>
+  
+  <section class="galeria" id="galeria">
+    <h2 class="galeria-title">Galeria de Cortes</h2>
+    <div class="galeria-grid">
+      <img src="assets/img/img_g1.jpg" alt="Corte masculino 1">
+      <img src="assets/img/img_g2.jpg" alt="Corte masculino 2">
+      <img src="assets/img/img_g3.jpg" alt="Corte masculino 3">
+      <img src="assets/img/img_g4.jpg" alt="Corte masculino 4">
+      <img src="assets/img/img_g5.jpg" alt="Corte masculino 5">
+      <img src="assets/img/img_g6.jpg" alt="Corte masculino 6">
+      <img src="assets/img/img_g7.jpg" alt="Corte masculino 7">
+      <img src="assets/img/img_g8.jpg" alt="Corte masculino 8">
+      
+
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <h2 class="contato-title">Entre em Contato</h2>
+  
+    <!-- <div class="contato-container">
+      <form class="form-contato">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="tel" placeholder="Seu WhatsApp" required>
+        <textarea placeholder="Sua mensagem ou serviço desejado..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form> -->
+  
+      <div class="info-contato">
+        <p><strong>WhatsApp:</strong> (79) 9 9680 9802</p>
+        <p><strong>Endereço:</strong> Aracaju Sergipe Bairro aruana Rua 1 loteamento costa verde Loja 03 N° 120</p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/_murilobarberman/" target="_blank">@_murilobarberman</a></p>
+        <p><strong>Horário:</strong> De segunda a sábado 09:00 às 19:00hrs</p>
+          <a href="https://wa.me/557996809802?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20na%20barbearia!" 
+            target="_blank" 
+            class="btn-whatsapp">
+            📲 Fale conosco no WhatsApp
+          </a>
+
       </div>
     </div>
   </section>
   
   
+
   
 
 </body>
