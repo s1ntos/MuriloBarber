@@ -1,6 +1,6 @@
-# 💈 Murilo Barber - Site Institucional
+# 💈 Murilo Barber - site comercial
 
-Este repositório contém o código-fonte do site institucional da barbearia **Murilo Barber**, desenvolvido com HTML, CSS e JavaScript puro, com estrutura simples, moderna e responsiva.
+Este repositório contém o código-fonte do site comercial da barbearia **Murilo Barber**, desenvolvido com HTML e CSS puro, com estrutura simples, moderna e responsiva.
 
 ---
 
@@ -10,7 +10,7 @@ Este repositório contém o código-fonte do site institucional da barbearia **M
 - `sobre.html` – Apresentação da história e proposta da barbearia
 - `servicos.html` – Lista dos serviços oferecidos e seus valores
 - `galeria.html` – Galeria de fotos com cortes, ambiente e profissionais
-- `contato.html` – Página com formulário, endereço, telefone e mapa
+- `contato.html` – Página com endereço, telefone e mapa
 
 ---
 
@@ -21,25 +21,11 @@ Este repositório contém o código-fonte do site institucional da barbearia **M
 - Nome da barbearia centralizado
 - Menu de navegação com links para as demais páginas
 - Estilização com `CSS` ou `Tailwind CSS`
-- Pode usar efeito de parallax no fundo para sofisticação
 
 ---
 
 ### Sobre (`sobre.html`)
-- Estrutura com **imagem à esquerda** e **texto à direita**
-- Utilize `Flexbox` ou `Grid` para layout responsivo
 - Destaque os diferenciais da barbearia no conteúdo
-
----
-
-### cores 
-
-Elemento	 Cor	    Hex
-
-Fundo	     Cinza    claro	#F2F2F2
-Header	   Azul     escuro ou petróleo	#1F2A44
-Texto	     Cinza    escuro	#333333
-Botões	   Azul     médio	#3E64FF
 
 ---
 
