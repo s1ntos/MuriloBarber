@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Otimiza a conexão com o Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet"> <!-- Fonte Roboto -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome para ícones -->
   <link rel="icon" type="image/png" sizes="16x16" href="assets\img\icons8-tesoura-de-barbeiro-50.png">
   <title>Murilo barber</title> <!-- Título da aba do navegador -->
 </head>
@@ -28,6 +29,20 @@
         <a href="#galeria">Galeria</a>
         <a href="#contato">Contato</a>
       </nav>
+      
+      <div class="hamburger" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#inicio" onclick="closeMobileMenu()">Inicio</a>
+        <a href="#sobre" onclick="closeMobileMenu()">Sobre</a>
+        <a href="#servicos" onclick="closeMobileMenu()">Serviços</a>
+        <a href="#galeria" onclick="closeMobileMenu()">Galeria</a>
+        <a href="#contato" onclick="closeMobileMenu()">Contato</a>
+      </div>
 
       
     </section>
@@ -37,8 +52,11 @@
   <div class="inicio-conteiner" id="inicio">
     <div class="logo-overlay">
       <img src="assets\img\murilologo.png" alt="Logo Murilo Barber"> <!-- Logo sobre o fundo -->
+      <p class="hero-subtitle">Estilo, Qualidade e Tradição em Cada Corte</p>
     </div>
-   
+    <div class="hero-cta">
+      <a href="#servicos" class="cta-button">Conheça Nossos Serviços</a>
+    </div>
   </div>
 
   <!-- Seção sobre -->
@@ -46,7 +64,7 @@
     <H1 class="title">Sobre <span>Nós</span></H1>
     <div class="row">
       <div class="container-img"> <!-- Imagem sobre a barbearia -->
-        <img src="assets\img\murilosobrenos.jpg" alt="sobre-nos">
+        <img src="/assets/img/muriloinicio.jpg" alt="sobre-nos">
       </div>
       <div class="content2">
         <h1>O Que Faz Nosso Corte Especial</h1>
@@ -116,40 +134,62 @@
     </div>
   </section>
 
+
+  <section class="mapa">
+    <div class="mapa-container">
+      <h2 class="mapa-title">Nossa Localização</h2>
+      <p class="mapa-subtitle">Venha nos visitar! Estamos localizados no bairro Aruana, em Aracaju-SE</p>
+      <div class="mapa-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.4349175700286!2d-37.09207022401367!3d-11.005959289157104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab16a73591e89%3A0x24bdce0c33da13cf!2sMurillo%20Barber%20Aruana!5e0!3m2!1sen!2sbr!4v1746542258519!5m2!1sen!2sbr" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      
+    </div>
+  </section>
+
   <section class="contato" id="contato">
     <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-column">
-          <h3>Contato</h3>
-          <p>Tel: <a href="tel:+5579996737858">(79) 9 9680 9802</a></p>
-          <p><a href="tel:+557933037318">(79) 9 9916-2796</a></p>
-          <p>Email: <a href="murillo931@gmail.com">murillo931@gmail.com</a></p>
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="footer-column">
+            <h3>Contato</h3>
+            <p>Tel: <a href="tel:+5579996737858">(79) 9 9680 9802</a></p>
+            <p><a href="tel:+557933037318">(79) 9 9916-2796</a></p>
+            <p>Email: <a href="mailto:murillo931@gmail.com">murillo931@gmail.com</a></p>
+          </div>
+    
+          <div class="footer-column">
+            <h3>Endereço</h3>
+            <p>Número°150 - Rua A, 150 - Aruana, Aracaju - SE</p>
+            <p>CEP 49000-000, Aracaju</p>
+            <p>Sergipe, Brasil</p>
+          </div>
+    
+          <div class="footer-column">
+            <h3>Atendimento</h3>
+            <p><strong>Segunda a Sábado:</strong></p>
+            <p>8:00 - 19:00</p>
+          </div>
         </div>
-  
-        <div class="footer-column">
-          <h3>Endereço</h3>
-          <p>Número°150 - Rua A, 150 - Aruana, Aracaju - SE</p>
-          <p>CEP 49000-000, Aracaju</p>
-          <p>Sergipe, Brasil</p>
-        </div>
-  
-        <div class="footer-column">
-          <h3>Atendimento</h3>
-          <p><strong>Segunda a Sábado:</strong></p>
-          <p>8:00 - 19:00</p>
+        
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <span class="logo-text-white">ZENIX</span>
+            <span class="logo-text-accent">CODE</span>
+          </div>
+          <p class="footer-copyright">
+            © 2025 ZenixCode. Todos os direitos reservados.
+          </p>
         </div>
       </div>
     </footer>
   </section>
-  
-  <section class="mapa">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.4349175700286!2d-37.09207022401367!3d-11.005959289157104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab16a73591e89%3A0x24bdce0c33da13cf!2sMurillo%20Barber%20Aruana!5e0!3m2!1sen!2sbr!4v1746542258519!5m2!1sen!2sbr" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </section>
 
+
+  <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
