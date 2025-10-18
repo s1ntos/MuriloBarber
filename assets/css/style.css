@@ -378,10 +378,10 @@ section {
 
 .row {
   display: flex;
-  flex-wrap: nowrap; /* força lado a lado enquanto couber */
+  flex-wrap: nowrap; 
   align-items: center;
   justify-content: center;
-  gap: 0.6rem; /* diminuir espaço entre imagem e texto */
+  gap: 0.6rem; 
   width: 100%;
   margin: 0;
   padding: 0 2rem 6rem;
@@ -390,12 +390,12 @@ section {
 }
 
 .container-img {
-  flex: 0 0 48%;    /* ocupa ~48% do espaço */
-  min-width: 260px; /* permite encolher mais sem quebrar layout */
+  flex: 0 0 48%;    
+  min-width: 260px; 
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 0.2rem; /* espaço mínimo */
+  margin-right: 0.2rem; 
 }
 
 .container-img::before {
@@ -404,7 +404,7 @@ section {
 
 .container-img img {
   width: 100%;
-  max-width: 480px; /* limita largura para aproximar o texto */
+  max-width: 480px; 
   height: auto;
   border-radius: 20px;
   box-shadow: var(--shadow-medium);
@@ -416,14 +416,14 @@ section {
 }
 
 .content2 {
-  flex: 0 0 48%;    /* ocupa ~48% do espaço */
+  flex: 0 0 48%;    
   min-width: 260px;
-  max-width: none;  /* permite ocupar mais se houver espaço */
+  max-width: none;  
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0.5rem;
-  margin-left: 0.2rem; /* espaço mínimo */
+  margin-left: 0.2rem; 
 }
 
 .content2 h1 {
@@ -441,7 +441,7 @@ section {
   text-align: justify;
 }
 
-/* Responsividade */
+
 @media (max-width: 992px) {
   .title {
     font-size: 5rem;
@@ -837,12 +837,12 @@ section {
     text-align: center;
   }
 
-  .footer-column h3 {
-    font-size: 1.6rem;
+  .footer-column h2 {
+    font-size: 2rem;
   }
 
   .footer-column p {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
   
   .logo-text-white,
@@ -956,12 +956,12 @@ section {
     gap: 1.5rem;
   }
 
-  .footer-column h3 {
-    font-size: 1.5rem;
+  .footer-column h2 {
+    font-size: 2rem;
   }
 
   .footer-column p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
   
   .logo-text-white,
@@ -970,7 +970,7 @@ section {
   }
   
   .footer-copyright {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .row {
@@ -1073,7 +1073,7 @@ section {
   }
   
   .mapa-subtitle {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   
   .mapa-info {
@@ -1135,8 +1135,8 @@ footer.footer::before {
   text-align: center;
 }
 
-.footer-column h3 {
-  font-size: 1.8rem;
+.footer-column h2 {
+  font-size: 2.3rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -1145,7 +1145,7 @@ footer.footer::before {
 }
 
 .footer-column p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 0.5rem;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.5;
@@ -1355,7 +1355,7 @@ footer.footer::before {
   }
   
   .mapa-subtitle {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
   }
   
