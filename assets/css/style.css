@@ -19,6 +19,7 @@
   font-size: 62.5%;
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -732,6 +733,11 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.contato {
+  padding: 0;
+  margin: 0;
 }
 
 
